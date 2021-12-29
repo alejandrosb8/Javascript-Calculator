@@ -1,0 +1,85 @@
+:root{
+    --just-white: #fff;
+    --light-blue: #8ECAE6;
+    --dark-blue: #023047;
+    --yellow: #FFB703;
+    --orange: #FB8500;
+    --red: #FB4B00;
+}
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: var(--light-blue);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-container{
+    height: 494px;
+    width: 320px;
+    background-color: var(--dark-blue);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: minmax(56px, 80px) repeat(5, 1fr);
+    gap: 10px;
+    box-shadow: 0 2px 1px 5px #032333;
+}
+.display{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--just-white);
+    grid-column: 1/5;
+}
+.display .operation{
+    text-align: end;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: hsl(203, 23%, 42%);
+}
+.display .result{
+    text-align: end;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--dark-blue);
+}
+#btnEqual{
+    grid-column: 3/5;
+}
+.btn{
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--dark-blue);
+    border: none;
+    transition: all 0.16s ease-out;
+}
+.operand{
+    background-color: var(--yellow);
+}
+.operand:hover{
+    background-color: var(--light-blue);
+}
+.erase{
+    background-color: var(--red);
+}
+.erase:hover{
+    background-color: var(--light-blue);
+}
+.operator{
+    background-color: var(--orange);
+}
+.operator:hover{
+    background-color: var(--light-blue);
+}
