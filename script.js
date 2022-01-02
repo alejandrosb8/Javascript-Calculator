@@ -21,7 +21,7 @@ buttons.forEach(btn => {
                 opHistory.textContent = '';
                 break;
             case 'btnC':
-                actualDisplay = opDisplay.textContent.slice(0, opDisplay.textContent.length - 1);
+                actualDisplay = actualDisplay.slice(0, opDisplay.textContent.length - 1);
                 break;
             case 'btn0':
                 actualDisplay += '0';
