@@ -1,7 +1,5 @@
-let result;
 let actualDisplay = '';
-let oldOperation;
-let newOperation;
+let oldOperation = '';
 let operationType = '';
 
 opDisplay = document.querySelector('#opDisplay');
