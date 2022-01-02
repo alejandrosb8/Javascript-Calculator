@@ -102,15 +102,11 @@ function makeOperation(one, two, op){
     switch (op){
         case '+':
             return one + two;
-            break;
         case '-':
             return one - two;
-            break;
         case 'x':
             return one * two;
-            break;
         case '/':
             return one / two;
-            break;
     }
 }
