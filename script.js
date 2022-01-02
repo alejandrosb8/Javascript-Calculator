@@ -90,6 +90,10 @@ buttons.forEach(btn => {
 });
 
 function pressOperationBtn(type){
+    if (oldOperation != ''){
+        opHistory.textContent = oldOperation + operationType + actualDisplay;
+        actualDisplay = makeOperation(oldOperation, actualDisplay, operationType);
+    }
     operationType = type;
     oldOperation = actualDisplay;
     actualDisplay = '';
