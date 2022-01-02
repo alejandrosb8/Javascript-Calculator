@@ -33,7 +33,7 @@ body{
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: minmax(56px, 80px) repeat(5, 1fr);
     gap: 10px;
-    box-shadow: 0 2px 1px 5px #032333;
+    box-shadow: 0 4px 6px 5px hsl(199, 64%, 50%);
 }
 .display{
     padding: 10px;
@@ -42,6 +42,7 @@ body{
     justify-content: space-between;
     background-color: var(--just-white);
     grid-column: 1/5;
+    overflow: hidden;
 }
 .display .operation{
     text-align: end;
