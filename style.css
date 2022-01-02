@@ -69,18 +69,20 @@ body{
 .operand{
     background-color: var(--yellow);
 }
-.operand:hover{
-    background-color: var(--light-blue);
-}
 .erase{
     background-color: var(--red);
-}
-.erase:hover{
-    background-color: var(--light-blue);
 }
 .operator{
     background-color: var(--orange);
 }
-.operator:hover{
-    background-color: var(--light-blue);
+@media (hover: hover) {
+    .operand:hover {
+        background-color: var(--light-blue);
+    }
+    .erase:hover{
+        background-color: var(--light-blue);
+    }
+    .operator:hover{
+        background-color: var(--light-blue);
+    }
 }
